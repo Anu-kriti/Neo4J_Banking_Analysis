@@ -1,0 +1,191 @@
+{
+  "style": {
+    "font-family": "sans-serif",
+    "background-color": "#ffffff",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#ffffff",
+    "border-width": 4,
+    "border-color": "#000000",
+    "radius": 50,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#000000",
+    "caption-font-size": 50,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "pill",
+    "label-color": "#000000",
+    "label-background-color": "#ffffff",
+    "label-border-color": "#000000",
+    "label-border-width": 4,
+    "label-font-size": 40,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "inline",
+    "detail-orientation": "parallel",
+    "arrow-width": 5,
+    "arrow-color": "#000000",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#000000",
+    "type-background-color": "#ffffff",
+    "type-border-color": "#000000",
+    "type-border-width": 0,
+    "type-font-size": 16,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#000000",
+    "property-font-size": 16,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n2",
+      "position": {
+        "x": 781.3209112422289,
+        "y": -442.4694339857541
+      },
+      "caption": "",
+      "labels": [
+        "Customer"
+      ],
+      "properties": {
+        "CustomerID": "CIF",
+        "Age": "Age",
+        "EmailAddress": "EmailAddress",
+        "FirstName": "FirstName",
+        "LastName": "LastName",
+        "PhoneNumber": "PhoneNumber",
+        "Gender": "Gender",
+        "Address": "Address",
+        "Country": "Country",
+        "JobTitle": "JobTitle"
+      },
+      "style": {}
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 781.3209112422293,
+        "y": -742.5143742659615
+      },
+      "caption": "",
+      "labels": [
+        "Account"
+      ],
+      "properties": {
+        "AccountNumber": "AccountNumber",
+        "CustomerID": "CIF"
+      },
+      "style": {}
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 1122.6409088500097,
+        "y": -442.46943398575416
+      },
+      "caption": "",
+      "labels": [
+        "Card"
+      ],
+      "properties": {
+        "CardNumber": "CardNumber",
+        "CustomerID": "CIF"
+      },
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": 1463.9609064577905,
+        "y": -442.46943398575416
+      },
+      "caption": "",
+      "labels": [
+        "Purchase"
+      ],
+      "properties": {
+        "TransactionID": "TransactionID",
+        "Amount": "Amount",
+        "PurchaseDatetime": "PurchaseDatetime"
+      },
+      "style": {}
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": 1463.9609064577905,
+        "y": -718.0122651310968
+      },
+      "caption": "",
+      "labels": [
+        "Merchant"
+      ],
+      "properties": {
+        "MerchantName": "Merchant"
+      },
+      "style": {}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n1",
+      "fromId": "n2",
+      "toId": "n3",
+      "type": "OWNS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n2",
+      "fromId": "n2",
+      "toId": "n4",
+      "type": "LINKED_TO",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n3",
+      "fromId": "n4",
+      "toId": "n5",
+      "type": "USED_FOR",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n4",
+      "fromId": "n5",
+      "toId": "n6",
+      "type": "MADE_AT",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n5",
+      "fromId": "n3",
+      "toId": "n3",
+      "type": "TRANSFERRED_TO",
+      "properties": {
+        "TransactionID": "TransactionID",
+        "Amount": "Amount",
+        "TransferDatetime": "TransferDatetime"
+      },
+      "style": {}
+    }
+  ]
+}
