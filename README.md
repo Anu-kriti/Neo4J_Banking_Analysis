@@ -8,7 +8,7 @@ This repository contains all necessary files using Neo4j.
 
 ### Included Files:
 1. **Dataset Overview Summary**
-   - `Dataset_overview_summary`: Provides an explanation of the dataset used for fraud detection, including sources, schema, and key attributes.
+   - `Dataset_overview_summary.pdf`: Provides an explanation of the dataset used for fraud detection, including sources, schema, and key attributes.
 
 2. **Graph Data Model and Architecture Diagrams**
    - `Graph_data_model.json`: JSON file representing the graph schema.
@@ -20,8 +20,8 @@ This repository contains all necessary files using Neo4j.
 4. **Presentation Slide Deck**
    - `Neo4J_Banking_Usecases.pdf`: presentation explaining the problem statement, solution approach, and outcomes.
 
-5. **Demo Video or Live Demo Instructions**
-   - `demo_video_link.txt`: Contains a shareable link to the demo video.
+5. **Demo Video**
+   - [Watch the Demo Video](https://youtu.be/78lDCSg9AYY)
 
 ## Setup Instructions
 ### Prerequisites
@@ -44,4 +44,4 @@ This repository contains all necessary files using Neo4j.
 
 4. **Presentation & Demo**
    - Use `Neo4J_Banking_Usecases.pdf` for stakeholder presentations.
-   - Watch the demo video or follow the live demo instructions.
+   - Watch the demo video.
